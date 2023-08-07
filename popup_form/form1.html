@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Feedback Form</title>
+</head>
+<body>
+	<h2>FEEDBACK FORM</h2>
+	<p>
+		Enter your name:&nbsp;<input id="userinput">
+	</p>
+	<p>
+		Your email id:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"><br>
+		
+
+	</p>
+	<p>
+		Your age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text">
+	</p>
+	<p>
+		Do you like the quality of our product?
+		<div>
+			<input type="checkbox" id="yes">
+			<label for="yes">Yes</label>
+		  </div>
+	  
+		  <div>
+			<input type="checkbox" id="no">
+			<label for="no">No</label>
+		  </div>
+	</p>
+	<p>
+		Write your valuable feedbacks/suggestions here.
+	</p>
+	<div>
+		<textarea rows="4" cols="40"></textarea>
+	</div>
+
+
+	
+	<button onclick="myFunction()">Submit</button>
+	<h1 id="message"></h1>
+</div>
+	<style>
+		body{
+			background-color: blanchedalmond;
+			text-align: center;
+			color: black;
+		}
+
+	</style>
+
+<script>
+	function myFunction(){
+		let userinput=document.querySelector("#userinput");
+		let message=document.querySelector("#message");
+		message.innerHTML="Your feedback has been successfully submitted, "+ userinput.value+"!";
+	}
+</script>
+</body>
+</html>
